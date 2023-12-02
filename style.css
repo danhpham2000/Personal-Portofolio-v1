@@ -1,0 +1,128 @@
+:root {
+  --color-light: #faeed1;
+  --color-medium: #ded0b6;
+  --color-dark: #bbab8c;
+  --color-sfsu: #b15eff;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 24px;
+  font-family: "Mukta", sans-serif;
+}
+
+.nav-bar {
+  border-bottom: 1px solid black;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 1.5rem;
+}
+
+.nav-item {
+  margin-right: 2rem;
+  font-size: 30px;
+  opacity: 0.3;
+  transition: all 0.4s;
+}
+
+.nav-item:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.about-me {
+  margin-top: 2rem;
+  display: flex;
+  text-align: center;
+}
+
+.about {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: 1px solid black;
+}
+
+.tech-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 2rem;
+}
+.tech-item {
+  margin-top: 2rem;
+  list-style: none;
+}
+
+.tech-item:hover {
+  animation: appear 0.5s infinite;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes identifier {
+}
+
+.photo {
+  width: 50%;
+  border-bottom: 1px solid black;
+}
+
+#profile-photo {
+  width: 500px;
+  border-radius: 2%;
+}
+
+.education {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-bottom: 1px solid black;
+}
+
+.education-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.education-content {
+  text-align: center;
+}
+
+.sfsu {
+  margin-bottom: 4rem;
+}
+
+.experience {
+  height: 95vh;
+}
+
+.experience-card {
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+}
