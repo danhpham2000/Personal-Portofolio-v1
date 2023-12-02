@@ -16,10 +16,7 @@
 html {
   font-size: 24px;
   font-family: "Mukta", sans-serif;
-}
-
-.nav-bar {
-  border-bottom: 1px solid black;
+  scroll-behavior: smooth;
 }
 
 .nav-list {
@@ -34,6 +31,9 @@ html {
   font-size: 30px;
   opacity: 0.3;
   transition: all 0.4s;
+}
+.nav-item > * {
+  text-decoration: none;
 }
 
 .nav-item:hover {
@@ -55,7 +55,6 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border-bottom: 1px solid black;
 }
 
 .about-me-header {
@@ -93,7 +92,6 @@ html {
 .photo {
   margin-top: 3rem;
   width: 50%;
-  border-bottom: 1px solid black;
 }
 
 #profile-photo {
@@ -104,10 +102,7 @@ html {
 
 .education {
   height: 95vh;
-  display: flex;
-  flex-direction: column;
   padding: 1.5rem;
-  border-bottom: 1px solid black;
 }
 
 .education-header {
@@ -131,7 +126,6 @@ html {
 
 .experience {
   height: 75vh;
-  border-bottom: 1px solid black;
 }
 
 .experience-title {
@@ -152,21 +146,64 @@ html {
   box-shadow: 5px 5px 20px;
 }
 .experience-card > * {
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 
 .experience-company {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .project-header {
-    text-align: center;
-    margin-top: 2rem;
-    color: var(--color-sfsu)
+  text-align: center;
+  color: var(--color-sfsu);
 }
 
 .project {
-    height: 75vh;
+  height: 65vh;
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
+.project > * {
+  border: 1px solid black;
+  border-radius: 25px;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 5px 5px 20px;
+  height: 70%;
+}
 
+.project > *:hover {
+  animation: appear 0.4s infinite;
+}
+
+.project-title {
+  font-weight: bolder;
+}
+
+.project > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.project-tech > * {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.contactme-header {
+  color: var(--color-sfsu);
+  text-align: center;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: center;
+  height: 25vh;
+}
+
+.contact-list > *:not(:last-child) {
+  margin-right: 2rem;
+}

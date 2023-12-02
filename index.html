@@ -19,10 +19,10 @@
   <body>
     <header class="nav-bar">
       <ul class="nav-list">
-        <li class="nav-item">Education</li>
-        <li class="nav-item">Experience</li>
-        <li class="nav-item">Projects</li>
-        <li class="nav-item">Contact me</li>
+        <li class="nav-item"><a href="#education">Education</a></li>
+        <li class="nav-item"><a href="#experience">Experience</a></li>
+        <li class="nav-item"><a href="#projects">Projects</a></li>
+        <li class="nav-item"><a href="#contact">Contact me</a></li>
       </ul>
     </header>
 
@@ -78,8 +78,8 @@
       </div>
     </div>
 
-    <div class="education">
-      <h2 class="education-header">Education</h2>
+    <h2 class="education-header">Education</h2>
+    <div class="education" id="education">
       <div class="education-content">
         <div class="sfsu">
           <div class="sfsu-logo">
@@ -106,7 +106,7 @@
       </div>
     </div>
 
-    <div class="experience">
+    <div class="experience" id="experience">
       <h2 class="experience-title">Work Experience</h2>
       <div class="experience-card">
         <div class="experience-company">Company: Life Stages</div>
@@ -120,26 +120,60 @@
       </div>
     </div>
 
-    <h2 class="project-header">Technical Projects</h2>
+    <h2 class="project-header" id="projects">Technical Projects</h2>
     <div class="project">
       <div class="project-1">
         <div class="project-title">To Do List</div>
         <div class="project-description">
           Application where user can improve productivity and task management
-          with adding, removing, and completed the task with real-time updates
+          with adding, removing, and completed the task
         </div>
-        <div class="project-tech">Technologies Used:</div>
+        <div class="project-tech">
+          <p class="tech-used">Technologies</p>
+          <i class="ci ci-css3 ci-2x"></i>
+          <i class="ci ci-js ci-2x"></i>
+          <i class="ci ci-nodejs ci-2x"></i>
+        </div>
       </div>
       <div class="project-2">
-        <div class="project-title"></div>
-        <div class="project-description"></div>
-        <div class="project-tech"></div>
+        <div class="project-title">Credit Score Classification</div>
+        <div class="project-description">
+          Machine Learning model that classifies the credit score status of
+          customer based on demographic and historical data
+        </div>
+        <div class="project-tech">
+          <p class="tech-used">Technologies</p>
+          <i class="ci ci-python ci-2x"></i>
+        </div>
       </div>
       <div class="project-3">
-        <div class="project-title"></div>
-        <div class="project-description"></div>
-        <div class="project-tech"></div>
+        <div class="project-title">Full Stack E-commerce Website</div>
+        <div class="project-description">
+          Real Estate Website that leverages frontend and backend infrastructure
+          to manage 12 ships for sale
+        </div>
+        <div class="project-tech">
+          <p class="tech-used">Technologies</p>
+          <i class="ci ci-html5 ci-2x"></i>
+          <i class="ci ci-css3 ci-2x"></i>
+          <i class="ci ci-js ci-2x"></i>
+          <i class="ci ci-php ci-2x"></i>
+          <i class="ci ci-mysql ci-2x"></i>
+        </div>
       </div>
+    </div>
+
+    <h2 class="contactme-header">Contact Me</h2>
+    <div class="contact-list">
+      <a href="mailto:danhpham1104@gmail.com"
+        ><i class="ci ci-gmail ci-2x"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/dcpham/"
+        ><i class="ci ci-linkedin ci-2x"></i
+      ></a>
+      <a href="https://github.com/danhpham2000"
+        ><i class="ci ci-github ci-2x"></i
+      ></a>
     </div>
   </body>
 </html>
