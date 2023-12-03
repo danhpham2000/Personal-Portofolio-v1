@@ -43,6 +43,10 @@ html {
   animation: appear 0.5s infinite;
 }
 
+.nav-item::after {
+  color: var(--color-sfsu);
+}
+
 .about-me {
   margin-top: 2rem;
   display: flex;
@@ -144,8 +148,12 @@ html {
   justify-content: center;
   text-align: center;
   box-shadow: 5px 5px 20px;
+}
+
+.experience-card:hover {
   animation: appear 0.4s infinite;
 }
+
 .experience-card > * {
   padding: 0.5rem;
 }
