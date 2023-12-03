@@ -137,8 +137,8 @@ html {
   border: 1px solid black;
   border-radius: 25px;
   margin: auto;
-  width: 35%;
-  height: 40%;
+  width: 30%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -151,6 +151,16 @@ html {
 
 .experience-company {
   font-weight: bolder;
+}
+
+.experience-tech-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.experience-tech-list > *:not(:last-child) {
+  margin-right: 2rem;
 }
 
 .project-header {
